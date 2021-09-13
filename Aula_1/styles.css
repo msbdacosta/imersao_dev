@@ -1,0 +1,173 @@
+:root {
+    --htmlFontSize: 100%;
+    
+    --baseColor: #414346;
+    --iconFill: var(--baseColor);
+    --anchorColor: #eee;
+    
+    --bodyBackgroundColor: #2c3338;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+    
+    --formGap: 0.875rem;
+    --inputBorderRadus: 0.25rem;
+    --inputColor: #eee;
+    --inputBackgroundColor: #3b4148;
+    --inputHoverBackgroundColor: #434a52;
+    --inputLabelBackgroundColor: #363b41;
+    --btnSubmitBackgroundColor: #fa3c85;
+    --btnSubmitColor: #eee;
+    --btnSubmitHoverBackgroundColor: #d44179;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  } 
+  
+  h1, p {
+    margin-block: 1rem;
+    text-align: center;
+    color: var(--btnSubmitColor);
+  }
+  
+  input {
+    background-image: none;
+    border: 0;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .form {
+    display: grid;
+    gap: var(--formGap);
+    margin: 1.5rem 0 1.5rem 0;;
+  }
+  
+  .form button[type="submit"] {
+    cursor: pointer;
+    inline-size: 100%;
+  }
+  
+  .fom input[type="number"] {
+    inline-size: 100%;
+  }
+  
+  .form__field {
+    display: flex;
+  }
+  
+  .form__input {
+    flex: 1;
+  }
+  
+  .grade {
+    color: var(--inputColor);
+  }
+  
+  .grade label,
+  .grade button,
+  .grade input[type="number"],
+  .grade input[type="submit"] {
+    border-radius: var(--inputBorderRadus);
+    padding: 1rem;
+  }
+  
+  .grade label {
+    background-color: var(--inputLabelBackgroundColor);
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    padding-inline: 1.25rem;
+  }
+  
+  .grade input[type="number"],
+  .grade input[type="text"] {
+    background-color: var(--inputBackgroundColor);
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+  }
+  
+  .grade input[type="number"]:focus,
+  .grade input[type="number"]:hover,
+  .grade input[type="text"]:focus,
+  .grade input[type="text"]:hover {
+    background-color: var(--inputHoverBackgroundColor);
+  }
+  
+  .grade button[type="submit"] {
+    background-color: var(--btnSubmitBackgroundColor);
+    color: var(--btnSubmitColor);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .grade button[type="submit"]:focus,
+  .grade button[type="submit"]:hover {
+    background-color: var(--btnSubmitHoverBackgroundColor);
+  }
+  
+  .grade button[type="submit"] {
+     border: none;
+  }
+  
+  .text--center {
+    text-align: center;
+  }
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+  
+  .hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  .icons {
+    display: none;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  

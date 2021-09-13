@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <title>Grade Average Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="scripts.js">
+  </head>
+  <body>
+    <h1>Grade Average Calculator</h1>
+    <p>Find out your grade average of all your exames</p>
+    <div class="grid align">
+    <form id="grade-form" method="POST" class="form grade">
+      <div class="form__field">
+        <label for="firstTerm"><i class="fas fa-graduation-cap"></i>
+          <span class="hidden">1st Term Grade</span></label>
+        <input type="number" id="firstTerm" name="firstTerm" class="form__input" placeholder="1st Term Grade" required>
+      </div>
+      <div class="form__field">
+        <label for="secondTerm"><i class="fas fa-graduation-cap"></i>
+          <span class="hidden">2st Term Grade</span></label>
+        <input type="number" id="secondTerm" name="secondTerm" class="form__input" placeholder="2st Term Grade" required>
+      </div>
+      <div class="form__field">
+        <label for="thirdTerm"><i class="fas fa-graduation-cap"></i>
+          <span class="hidden">3rd Term Grade</span></label>
+        <input type="number" id="thirdTerm" name="thirdTerm" class="form__input" placeholder="3rd Term Grade" required>
+      </div>
+      <div class="form__field">
+        <label for="forthTerm"><i class="fas fa-graduation-cap"></i>
+         <span class="hidden">4th Term Grade</span></label>
+        <input type="number" id="forthTerm" name="forthTerm" class="form__input" placeholder="4th Term Grade" required>
+      </div>
+      <button type="submit">Calculate</button>
+    </form>
+    </div>
+    <div id="result"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"></script>
+  </body>
+</html>
+
+
